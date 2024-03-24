@@ -10,7 +10,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "commands.ts"
+        "commands.ts",
+        "commandmap.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -22,5 +23,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
 }
