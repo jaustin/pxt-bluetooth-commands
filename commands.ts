@@ -54,7 +54,6 @@ namespace BLECommands {
     //% block="show pairing pattern"
     export function showPairingHistogram(): void {
         let n = control.deviceSerialNumber() >>> 0
-        serial.writeLine("" + (n.toString()))
         let ld = 1
         let d = 5
         let h;
